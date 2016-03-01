@@ -1,0 +1,59 @@
+//---------- Variables ----------//
+//---------- Global Styles ----------//
+
+.wrapper {
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+//---------- Banner Styles ----------//
+
+#banner {
+	background-image: url(images/banner_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+		padding: 0.34cm;
+		height: 930px;
+		background-color: #ccc
+}
+
+.headerlogo {
+	float: left;
+	margin: 0;
+	padding-left: 6.45cm;
+}
+
+nav {
+	float: right;
+	padding-top: 0.72cm;
+	padding-right: 1cm;
+}
+a {
+		color: #FFFFFF;
+		font-weight: 700;
+		text-decoration: none;
+		margin-left: 2rem;
+}
+
+.content {
+	padding: 5cm;
+}
+
+.tittellogo {
+	text-align: center;
+}
+
+.socials {
+	text-align: center;
+	padding-top: 5cm;
+}
+
+
+
+
+
+
