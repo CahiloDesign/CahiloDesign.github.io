@@ -5,6 +5,22 @@ body {
 	font-size: 100px;
 }
 
+.button {
+	border: none;
+	outline: none;
+	border-radius: 2rem;
+	padding: .7rem 5rem;
+	font-weight: 700;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+}
+
+.button_highlight {
+	background-color: #4b7ad2;
+}
+
 /*---------- Banner Styles ----------*/
 
 #banner {
@@ -62,32 +78,84 @@ a:hover {
 /*---------- Offer Styles ----------*/
 
 .header {
-	background-color: #1b2e3a;
-	height: 600px;
+	background-color: #FFFFFF;
+	height: 500px;
+	padding: 0;
+	margin: 0;
 }
 
 #offerlogos {
-	padding: 5rem;
+	padding-top: 5rem;
 	text-align: center;
 	margin: 0;
 }
 
 .diamant {
-	padding: 0 12rem 0 12rem;
+	padding: 0 14rem 0 14rem;
 }
 
 .text {
 	text-align: center;
-	horizontal-align: 
-	margin: 0;
-	padding: 0;
-	border: 0;
 	font-size: 30px;
-	color: #FFFFFF;
+	color: black;
+	margin: 0;
+	padding-top: 1cm;
+	padding-right: 1.5cm;
+}
+
+.l {
+	text-align: center;
+	padding: 0 9cm 0 9cm;
 }
 
 /*---------- Interested Styles ----------*/
+
+.header3 {
+	background-color: #0059ff;
+	text-align: center;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+.banner_wrapper {
+	text-align: center;
+	margin: 3rem 0;
+	padding-top: 3cm;
+}
+
+.button {
+	margin: 0 10rem;
+}
+
+.tittel {
+	font-size: 35px;
+	padding: 1cm 0 3cm 0;
+	margin: 0;
+	color: #FFFFFF;
+}
+
 /*---------- Quote Styles ----------*/
+
+.header4 {
+	background-color: #3498db;
+	text-align: center;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+.quote {
+	font-size: 30px;
+	color: #FFFFFF;
+	line-height: 10px;
+	padding-top: 1.5cm;
+}
+
+.mainpart {
+	line-height: 40px;
+}
+
 /*---------- Contact Styles ----------*/
 /*---------- Footer Styles ----------*/
 
