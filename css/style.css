@@ -24,7 +24,7 @@ body {
 /*---------- Banner Styles ----------*/
 
 #banner {
-	background-image: url("images/bakgrunn1.png");
+	background: url("/images/bakgrunn1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -181,6 +181,47 @@ a:hover {
 	margin: 0;
 	color: #FFFFFF;
 	text-align: center;
+}
+
+form {
+	max-width: 450px;
+	margin: 0 auto 100px;
+	padding: 0 20px;
+}
+
+input, textarea {
+	border: 3px;
+	border-style: solid;
+	border-color: black;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+[type="submit"] {
+	background-color: red;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+/*insert hover here!! hover???*/
+
+
+/*.contact-info-group {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}*/
+
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+span {
+	display: block;
 }
 
 /*---------- Footer Styles ----------*/
