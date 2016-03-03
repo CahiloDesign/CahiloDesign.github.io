@@ -24,7 +24,7 @@ body {
 /*---------- Banner Styles ----------*/
 
 #banner {
-	background-image: url(images/bakgrunn1.png);
+	background-image: url("images/bakgrunn1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -110,10 +110,15 @@ a:hover {
 
 /*---------- Interested Styles ----------*/
 
+
+
 .header3 {
+	background-image: url("images/bakgrunn2.png")
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: #0059ff;
+	height: 537px;
 	text-align: center;
-	height: 600px;
 	margin: 0;
 	padding: 0;
 }
@@ -125,7 +130,7 @@ a:hover {
 }
 
 .button {
-	margin: 0 10rem;
+	margin: 0 10rem 0 17rem;
 }
 
 .tittel {
@@ -133,6 +138,7 @@ a:hover {
 	padding: 1cm 0 3cm 0;
 	margin: 0;
 	color: #FFFFFF;
+	text-align: center;
 }
 
 /*---------- Quote Styles ----------*/
@@ -149,14 +155,34 @@ a:hover {
 	font-size: 30px;
 	color: #FFFFFF;
 	line-height: 10px;
-	padding-top: 1.5cm;
+	padding: 0;
 }
 
 .mainpart {
 	line-height: 40px;
 }
 
+.quoteimage {
+	padding: .7cm 0 0 0;
+}
+
 /*---------- Contact Styles ----------*/
+
+.header5 {
+	background-color: #32373c;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+.tittel7 {
+	font-size: 25px;
+	padding: 1cm 0 0 0;
+	margin: 0;
+	color: #FFFFFF;
+	text-align: center;
+}
+
 /*---------- Footer Styles ----------*/
 
 .copyright {
