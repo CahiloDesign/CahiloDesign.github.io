@@ -1,4 +1,3 @@
-/*---------- Variables ----------*/
 /*---------- Global Styles ----------*/
 body {
   font-family: 'Raleway', sans-serif; }
@@ -28,22 +27,23 @@ body {
 .menu {
   display: none; }
 
-/*---------- Nav Styles ----------*/
-.aboutmeheader {
-  height: 120px;
-  background: #126398; }
+/*---------- Banner Styles ----------*/
+.firstheader {
+  height: 950px;
+  background-color: #126398; }
 
 nav {
   float: right;
   padding: 3rem 25rem 0 0; }
-  nav a {
-    color: #FFFFFF;
-    font-weight: 700;
-    text-decoration: none;
-    margin-left: 2rem; }
-    nav a:hover {
-      color: #ecf0f1;
-      background-color: #95a5a6; }
+
+a {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 2rem; }
+  a:hover {
+    color: #ecf0f1;
+    background-color: #95a5a6; }
 
 .headerlogo {
   padding: 1.5rem 0 0 25rem;
@@ -52,13 +52,86 @@ nav {
   margin: 0;
   float: left; }
 
-/*---------- Content Styles ----------*/
-#content {
-  max-width: 640px;
-  padding: 0;
+.content {
+  padding-top: 10cm;
+  text-align: center; }
+
+.tittel1 {
+  color: #FFFFFF;
+  font-size: 50px;
+  margin-bottom: 15px; }
+
+.undertittel {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0; }
+
+/*---------- Offer Styles ----------*/
+.header {
+  background-color: #FFFFFF;
+  height: 400px;
+  padding: 2cm 0 0 0;
+  margin: 0; }
+
+#offerlogos {
+  padding-top: rem;
+  text-align: center;
+  margin: 0; }
+
+.wrapper1 {
+  width: 90%;
   margin: 0 auto; }
 
-/*---------- Skills Styles ----------*/
+.col-1, .col-2, .col-3 {
+  float: left;
+  width: 33%;
+  padding: 0 5% 0 2.5%;
+  box-sizing: border-box;
+  text-align: center; }
+
+/*---------- Interested Styles ----------*/
+.header3 {
+  background-color: #0059ff;
+  height: 537px;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+.banner_wrapper {
+  text-align: center;
+  margin: 3rem 0;
+  padding-top: 3cm; }
+
+.button {
+  margin: 0 10rem 0 17rem; }
+
+.tittel {
+  font-size: 25px;
+  padding: .3cm 0 5.5cm 0;
+  margin: 0;
+  color: #FFFFFF;
+  text-align: center; }
+
+/*---------- Quote Styles ----------*/
+.header4 {
+  background-color: #3498db;
+  text-align: center;
+  height: 300px;
+  margin: 0;
+  padding: 0; }
+
+.quote {
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 10px;
+  padding: 0; }
+
+.mainpart {
+  line-height: 40px; }
+
+.quoteimage {
+  padding: .7cm 0 0 0; }
+
 /*---------- Contact Styles ----------*/
 .header5 {
   background-color: #32373c;
@@ -118,13 +191,13 @@ label {
   display: block;
   margin-bottom: 20px; }
 
-.rart {
+span {
   display: block;
   color: #FFFFFF;
   font-weight: 700; }
 
 /*---------- Footer Styles ----------*/
-footer .copyright {
+.copyright {
   text-align: center;
   /*float: left;*/
   color: gray;
@@ -134,5 +207,17 @@ footer .copyright {
   padding: 20px; }
 
 /*---------- Responsive Styles ----------*/
+@media screen and (max-width: 768px) {
+  nav {
+    display: none; }
 
-/*# sourceMappingURL=aboutme.css.map */
+  .menu {
+    display: block;
+    float: right; } }
+i {
+  font-size: 1.5em;
+  color: #FFFFFF;
+  padding-top: .6em;
+  padding-left: 5rem; }
+
+/*# sourceMappingURL=styles.css.map */

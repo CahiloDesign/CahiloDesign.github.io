@@ -30,13 +30,11 @@ body {
 	clear:both;
 }
 
-/*---------- Banner Styles ----------*/
-
-#banner {
-	background: url("/images/bakgrunn1.png");
-	background-repeat: no-repeat;
-	background-size: cover;
+.menu {
+	display: none;
 }
+
+/*---------- Banner Styles ----------*/
 
 .firstheader {
 	height: 950px;
@@ -114,9 +112,6 @@ a:hover {
 /*---------- Interested Styles ----------*/
 
 .header3 {
-	background-image: url("images/bakgrunn2.png")
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-color: #0059ff;
 	height: 537px;
 	text-align: center;
@@ -250,7 +245,24 @@ span {
 	padding: 20px;
 }
 
+/*---------- Responsive Styles ----------*/
 
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;
+	}
+	.menu {
+		display: block;
+		float: right;
+	}
+}
+
+i {
+	font-size: 1.5em;
+	color: #FFFFFF;
+	padding-top: .6em;
+	padding-left: 5rem;
+}
 
 
 

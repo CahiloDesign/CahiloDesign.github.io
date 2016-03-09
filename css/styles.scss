@@ -1,0 +1,278 @@
+/*---------- Variables ----------*/
+
+$white: #FFFFFF;
+$headerblue: #126398;
+
+/*---------- Global Styles ----------*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: .7rem 5rem;
+  font-weight: 700;
+  font-size: 20px;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button_highlight {
+  background-color: #4b7ad2;
+}
+
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+/*---------- Banner Styles ----------*/
+
+.firstheader {
+  height: 950px;
+  background-color: $headerblue;
+}
+
+nav {
+  float: right;
+  padding: 3rem 25rem 0 0;
+}
+
+a {
+  color: $white;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 2rem;
+  &:hover {
+    color: #ecf0f1;
+    background-color: #95a5a6;
+  }
+}
+
+.headerlogo {
+  padding: 1.5rem 0 0 25rem;
+  width: 120px;
+  height: 70px;
+  margin: 0;
+  float: left;
+}
+
+.content {
+  padding-top: 10cm;
+  text-align: center;
+}
+
+.tittel1 {
+  color: $white;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.undertittel {
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------- Offer Styles ----------*/
+
+.header {
+  background-color: $white;
+  height: 400px;
+  padding: 2cm 0 0 0;
+  margin: 0;
+}
+
+#offerlogos {
+  padding-top: rem;
+  text-align: center;
+  margin: 0;
+}
+
+.wrapper1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.col-1, .col-2, .col-3 {
+  float: left;
+  width: 33%;
+  padding: 0 5% 0 2.5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*---------- Interested Styles ----------*/
+
+.header3 {
+  background-color: #0059ff;
+  height: 537px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.banner_wrapper {
+  text-align: center;
+  margin: 3rem 0;
+  padding-top: 3cm;
+}
+
+.button {
+  margin: 0 10rem 0 17rem;
+}
+
+.tittel {
+  font-size: 25px;
+  padding: .3cm 0 5.5cm 0;
+  margin: 0;
+  color: $white;
+  text-align: center;
+}
+
+/*---------- Quote Styles ----------*/
+
+.header4 {
+  background-color: #3498db;
+  text-align: center;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.quote {
+  font-size: 30px;
+  color: $white;
+  line-height: 10px;
+  padding: 0;
+}
+
+.mainpart {
+  line-height: 40px;
+}
+
+.quoteimage {
+  padding: .7cm 0 0 0;
+}
+
+/*---------- Contact Styles ----------*/
+
+.header5 {
+  background-color: #32373c;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.tittel7 {
+  font-size: 25px;
+  padding: .3cm 0 1.5cm 0;
+  margin: 0;
+  color: $white;
+  text-align: center;
+}
+
+form {
+  max-width: 450px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+input {
+  border: 0px;
+  border-style: solid;
+  border-color: #834f18;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  border: 0px;
+  border-style: solid;
+  border-color: #834f18;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  height: 10em;
+  resize: none;
+}
+
+[type="submit"] {
+  background-color: #e67e22;
+  color: $white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.contact-info-group > label {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  &:nth-child(1) {
+    padding-right: 10px;
+  }
+  &:nth-child(2) {
+    padding-left: 10px;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.rart {
+  display: block;
+  color: $white;
+  font-weight: 700;
+}
+
+/*---------- Footer Styles ----------*/
+
+.copyright {
+  text-align: center;
+  /*float: left;*/
+  color: gray;
+  font-weight: 700;
+  background-color: #2e2e2e;
+  margin: 0;
+  padding: 20px;
+}
+
+/*---------- Responsive Styles ----------*/
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    float: right;
+  }
+}
+
+i {
+  font-size: 1.5em;
+  color: $white;
+  padding-top: .6em;
+  padding-left: 5rem;
+}

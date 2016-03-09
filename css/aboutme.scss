@@ -1,7 +1,13 @@
 /*---------- Variables ----------*/
+
+$white: #FFFFFF;
+$headerblue: #126398;
+
 /*---------- Global Styles ----------*/
+
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+}
 
 .button {
   border: none;
@@ -10,73 +16,92 @@ body {
   padding: .7rem 5rem;
   font-weight: 700;
   font-size: 20px;
-  color: #FFFFFF;
+  color: $white;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+}
 
 .button_highlight {
-  background-color: #4b7ad2; }
+  background-color: #4b7ad2;
+}
 
-.clearfix:before {
-  content: " ";
-  display: table; }
-.clearfix:after {
-  content: " ";
-  display: table;
-  clear: both; }
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
 
 .menu {
-  display: none; }
-
+  display: none;
+}
 /*---------- Nav Styles ----------*/
+
 .aboutmeheader {
-  height: 120px;
-  background: #126398; }
+	height: 120px;
+	background: $headerblue;
+}
 
 nav {
   float: right;
-  padding: 3rem 25rem 0 0; }
-  nav a {
-    color: #FFFFFF;
-    font-weight: 700;
-    text-decoration: none;
-    margin-left: 2rem; }
-    nav a:hover {
-      color: #ecf0f1;
-      background-color: #95a5a6; }
+  padding: 3rem 25rem 0 0;
+	a {
+	  color: $white;
+	  font-weight: 700;
+	  text-decoration: none;
+	  margin-left: 2rem;
+	  &:hover {
+	    color: #ecf0f1;
+	    background-color: #95a5a6;
+	  }
+  }
+}
 
 .headerlogo {
   padding: 1.5rem 0 0 25rem;
   width: 120px;
   height: 70px;
   margin: 0;
-  float: left; }
-
+  float: left;
+}
 /*---------- Content Styles ----------*/
-#content {
-  max-width: 640px;
-  padding: 0;
-  margin: 0 auto; }
 
+#content {
+	max-width: 640px;
+	padding: 0;
+	margin: 0 auto;
+	.icon {
+		
+	}
+}
 /*---------- Skills Styles ----------*/
 /*---------- Contact Styles ----------*/
+
 .header5 {
   background-color: #32373c;
   height: 600px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .tittel7 {
   font-size: 25px;
   padding: .3cm 0 1.5cm 0;
   margin: 0;
-  color: #FFFFFF;
-  text-align: center; }
+  color: $white;
+  text-align: center;
+}
 
 form {
   max-width: 450px;
   margin: 0 auto 100px;
-  padding: 0 20px; }
+  padding: 0 20px;
+}
 
 input {
   border: 0px;
@@ -85,7 +110,8 @@ input {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 textarea {
   border: 0px;
@@ -96,43 +122,50 @@ textarea {
   padding: 10px;
   font-size: 16px;
   height: 10em;
-  resize: none; }
+  resize: none;
+}
 
 [type="submit"] {
   background-color: #e67e22;
-  color: #FFFFFF;
+  color: $white;
   font-size: 18px;
   text-transform: uppercase;
-  border: 0; }
+  border: 0;
+}
 
 .contact-info-group > label {
   width: 50%;
   float: left;
-  box-sizing: border-box; }
-  .contact-info-group > label:nth-child(1) {
-    padding-right: 10px; }
-  .contact-info-group > label:nth-child(2) {
-    padding-left: 10px; }
+  box-sizing: border-box;
+  &:nth-child(1) {
+    padding-right: 10px;
+  }
+  &:nth-child(2) {
+    padding-left: 10px;
+  }
+}
 
 label {
   display: block;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .rart {
   display: block;
-  color: #FFFFFF;
-  font-weight: 700; }
-
-/*---------- Footer Styles ----------*/
-footer .copyright {
-  text-align: center;
-  /*float: left;*/
-  color: gray;
+  color: $white;
   font-weight: 700;
-  background-color: #2e2e2e;
-  margin: 0;
-  padding: 20px; }
+}
+/*---------- Footer Styles ----------*/
 
+footer {
+	.copyright {
+	  text-align: center;
+	  /*float: left;*/
+	  color: gray;
+	  font-weight: 700;
+	  background-color: #2e2e2e;
+	  margin: 0;
+	  padding: 20px;
+	}
+}
 /*---------- Responsive Styles ----------*/
-
-/*# sourceMappingURL=aboutme.css.map */
