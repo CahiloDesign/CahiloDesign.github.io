@@ -53,19 +53,6 @@ nav {
   float: left; }
 
 /*---------- Content Styles ----------*/
-#content {
-  max-width: 640px;
-  padding: 0;
-  margin: 0 auto; }
-  #content .icon {
-    margin: 0 auto;
-    text-align: center;
-    padding: 80px 0 30px 0; }
-  #content .aboutmetekst {
-    padding-top: 10px; }
-    #content .aboutmetekst span {
-      font-weight: 700; }
-
 /*---------- Skills Styles ----------*/
 /*---------- COPY!!! Styles ----------*/
 /*---------- Contact Styles ----------*/
@@ -144,4 +131,4 @@ footer .copyright {
 
 /*---------- Responsive Styles ----------*/
 
-/*# sourceMappingURL=aboutme.css.map */
+/*# sourceMappingURL=portfolio.css.map */
