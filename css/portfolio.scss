@@ -51,15 +51,14 @@ body {
 nav {
   float: right;
   padding: 3rem 25rem 0 0;
-	a {
-	  color: $white;
-	  font-weight: 700;
-	  text-decoration: none;
-	  margin-left: 2rem;
-	  &:hover {
-	    color: #ecf0f1;
-	    background-color: #95a5a6;
-	  }
+  a {
+    color: rgba(255, 255, 255, .8);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 2rem;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
   }
 }
 

@@ -1,3 +1,4 @@
+/*---------- Variables ----------*/
 /*---------- Global Styles ----------*/
 body {
   font-family: 'Raleway', sans-serif; }
@@ -28,43 +29,49 @@ body {
   display: none; }
 
 /*---------- Banner Styles ----------*/
-.firstheader {
+header {
+  height: 120px;
+  background: #126398;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0; }
+  header .logo {
+    padding: 1.5rem 0 0 25rem;
+    width: 120px;
+    height: 70px;
+    margin: 0;
+    float: left; }
+  header nav {
+    float: right;
+    padding: 3rem 25rem 0 0; }
+    header nav a {
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 2rem; }
+      header nav a:hover {
+        color: white; }
+
+.banner {
   height: 950px;
-  background-color: #126398; }
-
-nav {
-  float: right;
-  padding: 3rem 25rem 0 0; }
-
-a {
-  color: #FFFFFF;
-  font-weight: 700;
-  text-decoration: none;
-  margin-left: 2rem; }
-  a:hover {
-    color: #ecf0f1;
-    background-color: #95a5a6; }
-
-.headerlogo {
-  padding: 1.5rem 0 0 25rem;
-  width: 120px;
-  height: 70px;
-  margin: 0;
-  float: left; }
-
-.content {
-  padding-top: 10cm;
-  text-align: center; }
-
-.tittel1 {
-  color: #FFFFFF;
-  font-size: 50px;
-  margin-bottom: 15px; }
-
-.undertittel {
-  color: #FFFFFF;
-  margin: 0;
-  padding: 0; }
+  width: 100%;
+  positon: fixed;
+  background-attachment: fixed; }
+  .banner .content {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 8cm;
+    position: absolute; }
+  .banner .tittel1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    margin-bottom: 15px; }
+  .banner .undertittel {
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0; }
 
 /*---------- Offer Styles ----------*/
 .header {
@@ -191,7 +198,7 @@ label {
   display: block;
   margin-bottom: 20px; }
 
-span {
+.rart {
   display: block;
   color: #FFFFFF;
   font-weight: 700; }

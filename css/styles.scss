@@ -2,7 +2,6 @@
 
 $white: #FFFFFF;
 $headerblue: #126398;
-$darkblue: #;
 
 /*---------- Global Styles ----------*/
 
@@ -44,45 +43,57 @@ body {
 
 /*---------- Banner Styles ----------*/
 
-nav {
-  float: right;
-  padding: 3rem 25rem 0 0;
-}
-
-a {
-  color: $white;
-  font-weight: 700;
-  text-decoration: none;
-  margin-left: 2rem;
-  &:hover {
-    color: #ecf0f1;
-    background-color: #95a5a6;
-  }
-}
-
-.headerlogo {
+header {
+  height: 120px;
+  background: $headerblue;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+ .logo {
   padding: 1.5rem 0 0 25rem;
   width: 120px;
   height: 70px;
   margin: 0;
   float: left;
+  }
+  nav {
+  float: right;
+  padding: 3rem 25rem 0 0;
+    a {
+      color: rgba(255, 255, 255, .8);
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 2rem;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
 }
 
-.content {
-  padding-top: 10cm;
-  text-align: center;
-}
-
-.tittel1 {
-  color: $white;
-  font-size: 50px;
-  margin-bottom: 15px;
-}
-
-.undertittel {
-  color: $white;
-  margin: 0;
-  padding: 0;
+.banner {
+  height: 950px;
+  width: 100%;
+  positon: fixed;
+  background-attachment: fixed;
+  .content {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 8cm;
+    position: absolute;
+  }
+  .tittel1 {
+    color: $white;
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .undertittel {
+    color: $white;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*---------- Offer Styles ----------*/
