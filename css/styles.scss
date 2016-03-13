@@ -1,8 +1,12 @@
 /*---------- Variables ----------*/
 
-$white: #FFFFFF;
-$headerblue: #126398;
-
+$white:          #FFFFFF;
+$headerblue:     #126398;
+$headerdarkblue: #004f79;
+$orange:         #e67e22;
+$gray:           #32373c;
+$aqua:           #2980b9;
+$interested:     #2c3e50;
 /*---------- Global Styles ----------*/
 
 body {
@@ -10,19 +14,28 @@ body {
 }
 
 .button {
-  border: none;
-  outline: none;
-  border-radius: 2rem;
-  padding: .7rem 5rem;
+  outline: 1px solid black;
+  padding: 10px 20px;
+  margin-left: 10px;
   font-weight: 700;
   font-size: 20px;
   color: $white;
   text-decoration: none;
-  text-align: center;
+  justify-content: center;
+  display: flex;
 }
-
 .button_highlight {
-  background-color: #4b7ad2;
+  background-color: $headerdarkblue;
+}
+.button_main {
+  background-color: $gray;
+}
+.button1 {
+ display: inline-block;
+ margin-left: 19cm;
+}
+.button2 {
+ display: inline-block;
 }
 
 .clearfix {
@@ -45,7 +58,7 @@ body {
 
 header {
   height: 120px;
-  background: $headerblue;
+  background: $headerdarkblue;
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -75,6 +88,7 @@ header {
 .banner {
   height: 950px;
   width: 100%;
+  background-size: cover;
   positon: fixed;
   background-attachment: fixed;
   .content {
@@ -127,26 +141,20 @@ header {
 /*---------- Interested Styles ----------*/
 
 .header3 {
-  background-color: #0059ff;
-  height: 537px;
-  text-align: center;
-  margin: 0;
+  background-color: $interested;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 1000px 1000px;
+  background-position: 50% 40%;
+  height: 650px;
+  margin:0;
   padding: 0;
-}
 
-.banner_wrapper {
-  text-align: center;
-  margin: 3rem 0;
-  padding-top: 3cm;
-}
-
-.button {
-  margin: 0 10rem 0 17rem;
 }
 
 .tittel {
   font-size: 25px;
-  padding: .3cm 0 5.5cm 0;
+  padding: .3cm 0 6cm 0;
   margin: 0;
   color: $white;
   text-align: center;
@@ -155,7 +163,7 @@ header {
 /*---------- Quote Styles ----------*/
 
 .header4 {
-  background-color: #3498db;
+  background-color: $aqua;
   text-align: center;
   height: 300px;
   margin: 0;
@@ -226,6 +234,7 @@ textarea {
   background-color: #e67e22;
   color: $white;
   font-size: 18px;
+  font-weight: 700;
   text-transform: uppercase;
   border: 0;
 }
