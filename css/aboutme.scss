@@ -1,9 +1,11 @@
 /*---------- Variables ----------*/
-
-$white: #FFFFFF;
-$headerblue: #126398;
-$darkblue: #111111;
-
+$white:          #FFFFFF;
+$headerblue:     #126398;
+$headerdarkblue: #004f79;
+$orange:         #e67e22;
+$gray:           #32373c;
+$aqua:           #2980b9;
+$interested:     #2c3e50;
 /*---------- Global Styles ----------*/
 
 body {
@@ -11,19 +13,28 @@ body {
 }
 
 .button {
-  border: none;
-  outline: none;
-  border-radius: 2rem;
-  padding: .7rem 5rem;
+  outline: 1px solid black;
+  padding: 10px 20px;
+  margin-left: 10px;
   font-weight: 700;
   font-size: 20px;
   color: $white;
   text-decoration: none;
-  text-align: center;
+  justify-content: center;
+  display: flex;
 }
-
 .button_highlight {
-  background-color: #4b7ad2;
+  background-color: $headerdarkblue;
+}
+.button_main {
+  background-color: $gray;
+}
+.button1 {
+ display: inline-block;
+ margin-left: 19cm;
+}
+.button2 {
+ display: inline-block;
 }
 
 .clearfix {
@@ -41,40 +52,43 @@ body {
 .menu {
   display: none;
 }
-/*---------- Nav Styles ----------*/
 
-.aboutmeheader {
-	height: 120px;
-	background: $headerblue;
-}
+/*---------- Banner Styles ----------*/
 
-nav {
-  float: right;
-  padding: 3rem 25rem 0 0;
-	a {
-	  color: rgba(255, 255, 255, .8);
-	  font-weight: bold;
-	  text-decoration: none;
-	  margin-left: 2rem;
-	  &:hover {
-	    color: rgba(255, 255, 255, 1);
-	  }
-  }
-}
-
-.headerlogo {
+header {
+  height: 120px;
+  background: $headerdarkblue;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+ .logo {
   padding: 1.5rem 0 0 25rem;
   width: 120px;
   height: 70px;
   margin: 0;
   float: left;
+  }
+  nav {
+  float: right;
+  padding: 3rem 25rem 0 0;
+    a {
+      color: rgba(255, 255, 255, .8);
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 2rem;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
 }
-/*---------- Content Styles ----------*/
 
 #content {
 	max-width: 640px;
 	padding: 0;
-	margin: 0 auto;
+	margin: 3.5cm auto;
+	margin-bottom: 1cm;
 	.icon {
 		margin: 0 auto;
 		text-align: center;
@@ -87,8 +101,7 @@ nav {
 		}
 	}
 }
-/*---------- Skills Styles ----------*/
-/*---------- COPY!!! Styles ----------*/
+
 /*---------- Contact Styles ----------*/
 
 .header5 {
@@ -138,6 +151,7 @@ textarea {
   background-color: #e67e22;
   color: $white;
   font-size: 18px;
+  font-weight: 700;
   text-transform: uppercase;
   border: 0;
 }
@@ -164,17 +178,34 @@ label {
   color: $white;
   font-weight: 700;
 }
+
 /*---------- Footer Styles ----------*/
 
-footer {
-	.copyright {
-	  text-align: center;
-	  /*float: left;*/
-	  color: gray;
-	  font-weight: 700;
-	  background-color: #2e2e2e;
-	  margin: 0;
-	  padding: 20px;
-	}
+.copyright {
+  text-align: center;
+  /*float: left;*/
+  color: gray;
+  font-weight: 700;
+  background-color: #2e2e2e;
+  margin: 0;
+  padding: 20px;
 }
+
 /*---------- Responsive Styles ----------*/
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    float: right;
+  }
+}
+
+i {
+  font-size: 1.5em;
+  color: $white;
+  padding-top: .6em;
+  padding-left: 5rem;
+}
