@@ -12,6 +12,15 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.button_wrapper {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .button {
   outline: 1px solid black;
   padding: 10px 20px;
@@ -31,7 +40,6 @@ body {
 }
 .button1 {
  display: inline-block;
- margin-left: 19cm;
 }
 .button2 {
  display: inline-block;
@@ -47,10 +55,6 @@ body {
     display: table;
     clear: both;
   }
-}
-
-.menu {
-  display: none;
 }
 
 /*---------- Banner Styles ----------*/
@@ -94,20 +98,34 @@ header {
     text-align: center;
     height: 100%;
     width: 100%;
-    margin-top: 8cm;
-    position: absolute;
+    margin-top: 9cm;
+    position: relative;
+    .tittel1 {
+      color: $white;
+      font-size: 50px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    .undertittel, .work {
+      color: $white;
+      margin-right: 80px;
+      padding: 0;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .work {
+      position: absolute;
+      top: 50%s;
+      left: 50%;
+      margin-top: -29px;
+      margin-left: 88px;
+    }
   }
-  .tittel1 {
-    color: $white;
-    font-size: 50px;
-    margin-bottom: 15px;
+}  
+
+.nodisplay {
+  display: none;
   }
-  .undertittel {
-    color: $white;
-    margin: 0;
-    padding: 0;
-  }
-}
 
 /*---------- Offer Styles ----------*/
 
@@ -274,20 +292,3 @@ label {
 }
 
 /*---------- Responsive Styles ----------*/
-
-@media screen and (max-width: 768px) {
-  nav {
-    display: none;
-  }
-  .menu {
-    display: block;
-    float: right;
-  }
-}
-
-i {
-  font-size: 1.5em;
-  color: $white;
-  padding-top: .6em;
-  padding-left: 5rem;
-}

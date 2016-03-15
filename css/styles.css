@@ -3,6 +3,14 @@
 body {
   font-family: 'Raleway', sans-serif; }
 
+.button_wrapper {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin: 0 auto; }
+
 .button {
   outline: 1px solid black;
   padding: 10px 20px;
@@ -21,8 +29,7 @@ body {
   background-color: #32373c; }
 
 .button1 {
-  display: inline-block;
-  margin-left: 19cm; }
+  display: inline-block; }
 
 .button2 {
   display: inline-block; }
@@ -34,9 +41,6 @@ body {
   content: " ";
   display: table;
   clear: both; }
-
-.menu {
-  display: none; }
 
 /*---------- Banner Styles ----------*/
 header {
@@ -73,16 +77,28 @@ header {
     text-align: center;
     height: 100%;
     width: 100%;
-    margin-top: 8cm;
-    position: absolute; }
-  .banner .tittel1 {
-    color: #FFFFFF;
-    font-size: 50px;
-    margin-bottom: 15px; }
-  .banner .undertittel {
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0; }
+    margin-top: 9cm;
+    position: relative; }
+    .banner .content .tittel1 {
+      color: #FFFFFF;
+      font-size: 50px;
+      margin-bottom: 15px;
+      font-weight: 700; }
+    .banner .content .undertittel, .banner .content .work {
+      color: #FFFFFF;
+      margin-right: 80px;
+      padding: 0;
+      font-weight: 700;
+      font-size: 25px; }
+    .banner .content .work {
+      position: absolute;
+      top: 50% s;
+      left: 50%;
+      margin-top: -29px;
+      margin-left: 88px; }
+
+.nodisplay {
+  display: none; }
 
 /*---------- Offer Styles ----------*/
 .header {
@@ -221,17 +237,5 @@ label {
   padding: 20px; }
 
 /*---------- Responsive Styles ----------*/
-@media screen and (max-width: 768px) {
-  nav {
-    display: none; }
-
-  .menu {
-    display: block;
-    float: right; } }
-i {
-  font-size: 1.5em;
-  color: #FFFFFF;
-  padding-top: .6em;
-  padding-left: 5rem; }
 
 /*# sourceMappingURL=styles.css.map */
