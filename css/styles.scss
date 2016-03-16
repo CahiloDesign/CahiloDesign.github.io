@@ -233,6 +233,10 @@ input {
   box-sizing: border-box;
   padding: 10px;
   font-size: 16px;
+
+  &:focus {
+    outline-color: $orange;
+  }
 }
 
 textarea {
@@ -245,6 +249,10 @@ textarea {
   font-size: 16px;
   height: 10em;
   resize: none;
+
+  &:focus {
+    outline-color: $orange;
+  }
 }
 
 [type="submit"] {
@@ -254,6 +262,10 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   border: 0;
+
+  &:focus {
+    outline-color: $white;
+  }
 }
 
 .contact-info-group > label {

@@ -188,6 +188,8 @@ input {
   box-sizing: border-box;
   padding: 10px;
   font-size: 16px; }
+  input:focus {
+    outline-color: #e67e22; }
 
 textarea {
   border: 0px;
@@ -199,6 +201,8 @@ textarea {
   font-size: 16px;
   height: 10em;
   resize: none; }
+  textarea:focus {
+    outline-color: #e67e22; }
 
 [type="submit"] {
   background-color: #e67e22;
@@ -207,6 +211,8 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   border: 0; }
+  [type="submit"]:focus {
+    outline-color: #FFFFFF; }
 
 .contact-info-group > label {
   width: 50%;
