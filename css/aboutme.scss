@@ -6,51 +6,15 @@ $orange:         #e67e22;
 $gray:           #32373c;
 $aqua:           #2980b9;
 $interested:     #2c3e50;
+$fontcolor:      #aba2b6;
+$steelblue:      #4682b4;
+$maingray:       #141414;
+$darkgray:       #0f0f0f;
+$contactcolor:   #32373c;
 /*---------- Global Styles ----------*/
 
 body {
   font-family: 'Raleway', sans-serif;
-}
-
-.button {
-  outline: 1px solid black;
-  padding: 10px 20px;
-  margin-left: 10px;
-  font-weight: 700;
-  font-size: 20px;
-  color: $white;
-  text-decoration: none;
-  justify-content: center;
-  display: flex;
-}
-.button_highlight {
-  background-color: $headerdarkblue;
-}
-.button_main {
-  background-color: $gray;
-}
-.button1 {
- display: inline-block;
- margin-left: 19cm;
-}
-.button2 {
- display: inline-block;
-}
-
-.clearfix {
-  &:before {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
-}
-
-.menu {
-  display: none;
 }
 
 /*---------- Banner Styles ----------*/
@@ -77,31 +41,91 @@ header {
       font-weight: bold;
       text-decoration: none;
       margin-left: 2rem;
+      text-transform: uppercase;
       &:hover {
         color: rgba(255, 255, 255, 1);
+      }
+      a:active {
+        color: rgba(255, 100, 255, 1);
       }
     }
   }
 }
 
-#content {
-	max-width: 640px;
-	padding: 0;
-	margin: 3.5cm auto;
-	margin-bottom: 1cm;
-	.icon {
-		margin: 0 auto;
-		text-align: center;
-		padding: 80px 0 30px 0;
-	}
-	.aboutmetekst {
-		padding-top: 10px;
-		span {
-			font-weight: 700;
-		}
-	}
+/*---------- Content Styles ----------*/
+
+.aboutwrapper {
+  height: 950px;
+  background: $headerblue;
+  max-width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
+hr, p {
+  width: 640px;
+  text-align: left;
+}
+
+#content {
+  padding: 0;
+  text-align: center;
+  .icon {
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 0 30px 0;
+  }
+  .aboutmetekst {
+    display: inline-block;
+    padding-top: 10px;
+    color: $white;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.skill-lockup {
+  max-width: 540px;
+  margin: 50px auto;
+  color: $white;
+  font-size: 20px;
+  .skill-unit {
+    width: 270px;
+    float: left;
+  }
+  .skill-icons {
+    font-size: 0;
+    margin: 3px 0 30px;
+    span {
+      display: inline-block;
+      height: 14px;
+      width: 14px;
+      background-color: $orange;
+      margin-right: 8px;
+      border-radius: 50%;
+      &:after {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: $white;
+        border-radius: 50%;
+        margin: 2px;
+      }
+    }
+    @for $i from 1 through 10 {
+      &.skill-#{$i} span:nth-child(n+#{$i + 1}) {
+        background: $contactcolor;
+      }
+    }
+  }
+}
+
+%skill-color {
+  background: $darkgray;
+}
 /*---------- Contact Styles ----------*/
 
 .header5 {
@@ -121,7 +145,7 @@ header {
 
 form {
   max-width: 450px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -133,6 +157,10 @@ input {
   box-sizing: border-box;
   padding: 10px;
   font-size: 16px;
+
+  &:focus {
+    outline-color: $orange;
+  }
 }
 
 textarea {
@@ -145,6 +173,10 @@ textarea {
   font-size: 16px;
   height: 10em;
   resize: none;
+
+  &:focus {
+    outline-color: $orange;
+  }
 }
 
 [type="submit"] {
@@ -154,6 +186,10 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   border: 0;
+
+  &:focus {
+    outline-color: $white;
+  }
 }
 
 .contact-info-group > label {
@@ -181,31 +217,35 @@ label {
 
 /*---------- Footer Styles ----------*/
 
-.copyright {
+footer {
   text-align: center;
-  /*float: left;*/
-  color: gray;
-  font-weight: 700;
   background-color: #2e2e2e;
+  height: 45px;
   margin: 0;
-  padding: 20px;
-}
-
-/*---------- Responsive Styles ----------*/
-
-@media screen and (max-width: 768px) {
-  nav {
-    display: none;
-  }
-  .menu {
-    display: block;
-    float: right;
-  }
-}
-
-i {
-  font-size: 1.5em;
+  padding: 0px;
   color: $white;
-  padding-top: .6em;
-  padding-left: 5rem;
+  .copyright {
+    font-weight: 700;
+    margin: 0;
+    display: block;
+  }
+  .socials {
+    margin: 0;
+    display: block;
+  }
 }
+
+.col-5, .col-6 {
+  margin: 0 auto;
+  display: inline-block;
+  width: 20%;
+  padding: 15px 5% 0 5%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+.fa {
+  margin-right: 15px;
+}
+/*---------- Responsive Styles ----------*/
