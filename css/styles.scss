@@ -6,6 +6,10 @@ $orange:         #e67e22;
 $gray:           #32373c;
 $aqua:           #2980b9;
 $interested:     #2c3e50;
+$fontcolor:      #aba2b6;
+$steelblue:      #4682b4;
+$maingray:       #141414;
+$darkgray:       #0f0f0f;
 /*---------- Global Styles ----------*/
 
 body {
@@ -293,14 +297,35 @@ label {
 
 /*---------- Footer Styles ----------*/
 
-.copyright {
+footer {
   text-align: center;
-  /*float: left;*/
-  color: gray;
-  font-weight: 700;
   background-color: #2e2e2e;
+  height: 45px;
   margin: 0;
-  padding: 20px;
+  padding: 0px;
+  color: $white;
+  .copyright {
+    font-weight: 700;
+    margin: 0;
+    display: block;
+  }
+  .socials {
+    margin: 0;
+    display: block;
+  }
 }
 
+.col-5, .col-6 {
+  margin: 0 auto;
+  display: inline-block;
+  width: 20%;
+  padding: 15px 5% 0 5%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+.fa {
+  margin-right: 15px;
+}
 /*---------- Responsive Styles ----------*/

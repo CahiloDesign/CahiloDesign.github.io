@@ -233,14 +233,32 @@ label {
   font-weight: 700; }
 
 /*---------- Footer Styles ----------*/
-.copyright {
+footer {
   text-align: center;
-  /*float: left;*/
-  color: gray;
-  font-weight: 700;
   background-color: #2e2e2e;
+  height: 45px;
   margin: 0;
-  padding: 20px; }
+  padding: 0px;
+  color: #FFFFFF; }
+  footer .copyright {
+    font-weight: 700;
+    margin: 0;
+    display: block; }
+  footer .socials {
+    margin: 0;
+    display: block; }
+
+.col-5, .col-6 {
+  margin: 0 auto;
+  display: inline-block;
+  width: 20%;
+  padding: 15px 5% 0 5%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0; }
+
+.fa {
+  margin-right: 15px; }
 
 /*---------- Responsive Styles ----------*/
 
