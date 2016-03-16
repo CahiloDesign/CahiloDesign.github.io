@@ -63,9 +63,12 @@ header {
       color: rgba(255, 255, 255, 0.8);
       font-weight: bold;
       text-decoration: none;
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      text-transform: uppercase; }
       header nav a:hover {
         color: white; }
+      header nav a a:active {
+        color: #ff64ff; }
 
 .banner {
   height: 950px;
@@ -177,7 +180,7 @@ header {
 
 form {
   max-width: 450px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   padding: 0 20px; }
 
 input {

@@ -85,8 +85,12 @@ header {
       font-weight: bold;
       text-decoration: none;
       margin-left: 2rem;
+      text-transform: uppercase;
       &:hover {
         color: rgba(255, 255, 255, 1);
+      }
+      a:active {
+        color: rgba(255, 100, 255, 1);
       }
     }
   }
@@ -225,7 +229,7 @@ header {
 
 form {
   max-width: 450px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
