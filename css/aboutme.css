@@ -1,9 +1,6 @@
 /*---------- Variables ----------*/
-/*---------- Global Styles ----------*/
-body {
-  font-family: 'Raleway', sans-serif; }
-
-/*---------- Banner Styles ----------*/
+/*---------- Imports Styles ----------*/
+/*---------- Headerbar Styles ----------*/
 header {
   height: 120px;
   background: #004f79;
@@ -30,80 +27,6 @@ header {
         color: white; }
       header nav a a:active {
         color: #ff64ff; }
-
-/*---------- Content Styles ----------*/
-.aboutwrapper {
-  height: 950px;
-  background: #126398;
-  max-width: 100%;
-  position: relative;
-  padding: 0;
-  margin: 0; }
-
-hr, p {
-  width: 640px;
-  text-align: left; }
-
-#content {
-  padding: 0;
-  text-align: center; }
-  #content .icon {
-    margin: 0 auto;
-    text-align: center;
-    padding: 150px 0 30px 0; }
-  #content .aboutmetekst {
-    display: inline-block;
-    padding-top: 10px;
-    color: #FFFFFF; }
-    #content .aboutmetekst span {
-      font-weight: 700; }
-
-.skill-lockup {
-  max-width: 540px;
-  margin: 50px auto;
-  color: #FFFFFF;
-  font-size: 20px; }
-  .skill-lockup .skill-unit {
-    width: 270px;
-    float: left; }
-  .skill-lockup .skill-icons {
-    font-size: 0;
-    margin: 3px 0 30px; }
-    .skill-lockup .skill-icons span {
-      display: inline-block;
-      height: 14px;
-      width: 14px;
-      background-color: #e67e22;
-      margin-right: 8px;
-      border-radius: 50%; }
-      .skill-lockup .skill-icons span:after {
-        content: "";
-        display: block;
-        height: 10px;
-        width: 10px;
-        background: #FFFFFF;
-        border-radius: 50%;
-        margin: 2px; }
-    .skill-lockup .skill-icons.skill-1 span:nth-child(n+2) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-2 span:nth-child(n+3) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-3 span:nth-child(n+4) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-4 span:nth-child(n+5) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-5 span:nth-child(n+6) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-6 span:nth-child(n+7) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-7 span:nth-child(n+8) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-8 span:nth-child(n+9) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-9 span:nth-child(n+10) {
-      background: #32373c; }
-    .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
-      background: #32373c; }
 
 /*---------- Contact Styles ----------*/
 .header5 {
@@ -204,6 +127,95 @@ footer {
 .fa {
   margin-right: 15px; }
 
-/*---------- Responsive Styles ----------*/
+/*---------- Global Styles ----------*/
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.clearfix:before {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/*---------- Banner Styles ----------*/
+/*---------- Content Styles ----------*/
+.aboutwrapper {
+  height: 950px;
+  background: #2c3e50;
+  max-width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0; }
+
+hr {
+  width: 300px;
+  text-align: center; }
+
+p {
+  width: 640px;
+  text-align: left; }
+
+#content {
+  padding: 0;
+  text-align: center; }
+  #content .icon {
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 0 30px 0; }
+  #content .aboutmetekst {
+    display: inline-block;
+    padding-top: 10px;
+    color: #FFFFFF; }
+    #content .aboutmetekst span {
+      font-weight: 700; }
+
+.skill-lockup {
+  max-width: 540px;
+  margin: 50px auto;
+  color: #FFFFFF;
+  font-size: 20px; }
+  .skill-lockup .skill-unit {
+    width: 270px;
+    float: left; }
+  .skill-lockup .skill-icons {
+    font-size: 0;
+    margin: 3px 0 30px; }
+    .skill-lockup .skill-icons span {
+      display: inline-block;
+      height: 14px;
+      width: 14px;
+      background-color: #e67e22;
+      margin-right: 8px;
+      border-radius: 50%; }
+      .skill-lockup .skill-icons span:after {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        margin: 2px; }
+    .skill-lockup .skill-icons.skill-1 span:nth-child(n+2) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-2 span:nth-child(n+3) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-3 span:nth-child(n+4) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-4 span:nth-child(n+5) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-5 span:nth-child(n+6) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-6 span:nth-child(n+7) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-7 span:nth-child(n+8) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-8 span:nth-child(n+9) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-9 span:nth-child(n+10) {
+      background: #32373c; }
+    .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
+      background: #32373c; }
 
 /*# sourceMappingURL=aboutme.css.map */

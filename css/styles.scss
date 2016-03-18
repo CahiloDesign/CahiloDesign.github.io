@@ -11,6 +11,10 @@ $steelblue:      #4682b4;
 $maingray:       #141414;
 $darkgray:       #0f0f0f;
 $contactcolor:   #32373c;
+/*---------- Imports Styles ----------*/
+
+@import "global";
+
 /*---------- Global Styles ----------*/
 
 body {
@@ -63,39 +67,6 @@ body {
 }
 
 /*---------- Banner Styles ----------*/
-
-header {
-  height: 120px;
-  background: $headerdarkblue;
-  width: 100%;
-  z-index: 10;
-  position: fixed;
-  top: 0;
- .logo {
-  padding: 1.5rem 0 0 25rem;
-  width: 120px;
-  height: 70px;
-  margin: 0;
-  float: left;
-  }
-  nav {
-  float: right;
-  padding: 3rem 25rem 0 0;
-    a {
-      color: rgba(255, 255, 255, .8);
-      font-weight: bold;
-      text-decoration: none;
-      margin-left: 2rem;
-      text-transform: uppercase;
-      &:hover {
-        color: rgba(255, 255, 255, 1);
-      }
-      a:active {
-        color: rgba(255, 100, 255, 1);
-      }
-    }
-  }
-}
 
 .banner {
   height: 950px;
@@ -211,126 +182,5 @@ header {
   padding: .7cm 0 0 0;
 }
 
-/*---------- Contact Styles ----------*/
 
-.header5 {
-  background-color: #32373c;
-  height: 600px;
-  margin: 0;
-  padding: 0;
-}
-
-.tittel7 {
-  font-size: 25px;
-  padding: .3cm 0 1.5cm 0;
-  margin: 0;
-  color: $white;
-  text-align: center;
-}
-
-form {
-  max-width: 450px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-input {
-  border: 0px;
-  border-style: solid;
-  border-color: #834f18;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
-
-  &:focus {
-    outline-color: $orange;
-  }
-}
-
-textarea {
-  border: 0px;
-  border-style: solid;
-  border-color: #834f18;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
-  height: 10em;
-  resize: none;
-
-  &:focus {
-    outline-color: $orange;
-  }
-}
-
-[type="submit"] {
-  background-color: #e67e22;
-  color: $white;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: 0;
-
-  &:focus {
-    outline-color: $white;
-  }
-}
-
-.contact-info-group > label {
-  width: 50%;
-  float: left;
-  box-sizing: border-box;
-  &:nth-child(1) {
-    padding-right: 10px;
-  }
-  &:nth-child(2) {
-    padding-left: 10px;
-  }
-}
-
-label {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.rart {
-  display: block;
-  color: $white;
-  font-weight: 700;
-}
-
-/*---------- Footer Styles ----------*/
-
-footer {
-  text-align: center;
-  background-color: #2e2e2e;
-  height: 45px;
-  margin: 0;
-  padding: 0px;
-  color: $white;
-  .copyright {
-    font-weight: 700;
-    margin: 0;
-    display: block;
-  }
-  .socials {
-    margin: 0;
-    display: block;
-  }
-}
-
-.col-5, .col-6 {
-  margin: 0 auto;
-  display: inline-block;
-  width: 20%;
-  padding: 15px 5% 0 5%;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 0;
-}
-
-.fa {
-  margin-right: 15px;
-}
 /*---------- Responsive Styles ----------*/

@@ -1,48 +1,6 @@
 /*---------- Variables ----------*/
-/*---------- Global Styles ----------*/
-body {
-  font-family: 'Raleway', sans-serif; }
-
-.button_wrapper {
-  position: relative;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  text-align: center;
-  margin: 0 auto; }
-
-.button {
-  outline: 1px solid black;
-  padding: 10px 20px;
-  margin-left: 10px;
-  font-weight: 700;
-  font-size: 20px;
-  color: #FFFFFF;
-  text-decoration: none;
-  justify-content: center;
-  display: flex; }
-
-.button_highlight {
-  background-color: #004f79; }
-
-.button_main {
-  background-color: #32373c; }
-
-.button1 {
-  display: inline-block; }
-
-.button2 {
-  display: inline-block; }
-
-.clearfix:before {
-  content: " ";
-  display: table; }
-.clearfix:after {
-  content: " ";
-  display: table;
-  clear: both; }
-
-/*---------- Banner Styles ----------*/
+/*---------- Imports Styles ----------*/
+/*---------- Headerbar Styles ----------*/
 header {
   height: 120px;
   background: #004f79;
@@ -69,100 +27,6 @@ header {
         color: white; }
       header nav a a:active {
         color: #ff64ff; }
-
-.banner {
-  height: 950px;
-  width: 100%;
-  background-size: cover;
-  positon: fixed;
-  background-attachment: fixed; }
-  .banner .content {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    margin-top: 9cm;
-    position: relative; }
-    .banner .content .tittel1 {
-      color: #FFFFFF;
-      font-size: 50px;
-      margin-bottom: 15px;
-      font-weight: 700; }
-    .banner .content .undertittel, .banner .content .work {
-      color: #FFFFFF;
-      margin-right: 80px;
-      padding: 0;
-      font-weight: 700;
-      font-size: 25px; }
-    .banner .content .work {
-      position: absolute;
-      top: 50% s;
-      left: 50%;
-      margin-top: -29px;
-      margin-left: 88px; }
-
-.nodisplay {
-  display: none; }
-
-/*---------- Offer Styles ----------*/
-.header {
-  background-color: #FFFFFF;
-  height: 400px;
-  padding: 2cm 0 0 0;
-  margin: 0; }
-
-#offerlogos {
-  padding-top: rem;
-  text-align: center;
-  margin: 0; }
-
-.wrapper1 {
-  width: 90%;
-  margin: 0 auto; }
-
-.col-1, .col-2, .col-3 {
-  float: left;
-  width: 33%;
-  padding: 0 5% 0 2.5%;
-  box-sizing: border-box;
-  text-align: center; }
-
-/*---------- Interested Styles ----------*/
-.header3 {
-  background-color: #2c3e50;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 1000px 1000px;
-  background-position: 50% 40%;
-  height: 650px;
-  margin: 0;
-  padding: 0; }
-
-.tittel {
-  font-size: 25px;
-  padding: .3cm 0 6cm 0;
-  margin: 0;
-  color: #FFFFFF;
-  text-align: center; }
-
-/*---------- Quote Styles ----------*/
-.header4 {
-  background-color: #2980b9;
-  text-align: center;
-  height: 300px;
-  margin: 0;
-  padding: 0; }
-
-.quote {
-  font-size: 30px;
-  color: #FFFFFF;
-  line-height: 10px;
-  padding: 0; }
-
-.mainpart {
-  line-height: 40px; }
-
-.quoteimage {
-  padding: .7cm 0 0 0; }
 
 /*---------- Contact Styles ----------*/
 .header5 {
@@ -262,6 +126,144 @@ footer {
 
 .fa {
   margin-right: 15px; }
+
+/*---------- Global Styles ----------*/
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.button_wrapper {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin: 0 auto; }
+
+.button {
+  outline: 1px solid black;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  justify-content: center;
+  display: flex; }
+
+.button_highlight {
+  background-color: #004f79; }
+
+.button_main {
+  background-color: #32373c; }
+
+.button1 {
+  display: inline-block; }
+
+.button2 {
+  display: inline-block; }
+
+.clearfix:before {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/*---------- Banner Styles ----------*/
+.banner {
+  height: 950px;
+  width: 100%;
+  background-size: cover;
+  positon: fixed;
+  background-attachment: fixed; }
+  .banner .content {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 9cm;
+    position: relative; }
+    .banner .content .tittel1 {
+      color: #FFFFFF;
+      font-size: 50px;
+      margin-bottom: 15px;
+      font-weight: 700; }
+    .banner .content .undertittel, .banner .content .work {
+      color: #FFFFFF;
+      margin-right: 80px;
+      padding: 0;
+      font-weight: 700;
+      font-size: 25px; }
+    .banner .content .work {
+      position: absolute;
+      top: 50% s;
+      left: 50%;
+      margin-top: -29px;
+      margin-left: 88px; }
+
+.nodisplay {
+  display: none; }
+
+/*---------- Offer Styles ----------*/
+.header {
+  background-color: #FFFFFF;
+  height: 400px;
+  padding: 2cm 0 0 0;
+  margin: 0; }
+
+#offerlogos {
+  padding-top: rem;
+  text-align: center;
+  margin: 0; }
+
+.wrapper1 {
+  width: 90%;
+  margin: 0 auto; }
+
+.col-1, .col-2, .col-3 {
+  float: left;
+  width: 33%;
+  padding: 0 5% 0 2.5%;
+  box-sizing: border-box;
+  text-align: center; }
+
+/*---------- Interested Styles ----------*/
+.header3 {
+  background-color: #2c3e50;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 1000px 1000px;
+  background-position: 50% 40%;
+  height: 650px;
+  margin: 0;
+  padding: 0; }
+
+.tittel {
+  font-size: 25px;
+  padding: .3cm 0 6cm 0;
+  margin: 0;
+  color: #FFFFFF;
+  text-align: center; }
+
+/*---------- Quote Styles ----------*/
+.header4 {
+  background-color: #2980b9;
+  text-align: center;
+  height: 300px;
+  margin: 0;
+  padding: 0; }
+
+.quote {
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 10px;
+  padding: 0; }
+
+.mainpart {
+  line-height: 40px; }
+
+.quoteimage {
+  padding: .7cm 0 0 0; }
 
 /*---------- Responsive Styles ----------*/
 
