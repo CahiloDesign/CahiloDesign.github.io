@@ -14,7 +14,6 @@ $contactcolor:   #32373c;
 /*---------- Imports Styles ----------*/
 
 @import "global";
-@import "portfoliogrid";
 
 /*---------- Global Styles ----------*/
 
@@ -36,6 +35,46 @@ body {
 
 /*---------- Banner Styles ----------*/
 /*---------- Portfolio Styles ----------*/
+
+.alt-section {
+  background: $headerblue;
+  padding-top: 180px;
+}
+
+.thumb-container {
+  max-width: 1416px;
+  margin: 0 auto;
+  padding-bottom: 500px;
+}
+
+.thumb-unit1, .thumb-unit2, .thumb-unit3, .thumb-unit4, .thumb-unit5, .thumb-unit6, .thumb-unit7, .thumb-unit8  {
+  width: 25%;
+  height: 200px;
+  background: pink;
+  display: block;
+  float: left;
+  position: relative;
+  //padding-top: 20%;
+}
+
+.thumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: fade-out($steelblue, 0.5)
+}
+
+
+.tittel {
+  font-size: 2em;
+  padding: 0cm 0 70px 0;
+  margin: 0;
+  color: $white;
+  text-align: center;
+}
+
 /*---------- Responsive Styles ----------*/
 
 /*@media screen and (max-width: 768px) {
