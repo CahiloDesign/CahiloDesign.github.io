@@ -39,33 +39,55 @@ body {
 .alt-section {
   background: $headerblue;
   padding-top: 180px;
+  overflow-x: hidden;
 }
 
 .thumb-container {
-  max-width: 1416px;
+  max-width: 95%;
   margin: 0 auto;
-  padding-bottom: 500px;
+  padding-bottom: 680px;
 }
 
 .thumb-unit1, .thumb-unit2, .thumb-unit3, .thumb-unit4, .thumb-unit5, .thumb-unit6, .thumb-unit7, .thumb-unit8  {
   width: 25%;
-  height: 200px;
+  height: 220px;
   background: pink;
   display: block;
   float: left;
   position: relative;
-  //padding-top: 20%;
-}
+  overflow: hidden;
+  padding-top: 2%;
+  
+  &:hover .thumb-overlay {
+      position: absolute;
+      top: 0%;
+      left: 0;
+      bottom: null;
+      right: 0;
+    }
 
-.thumb-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: fade-out($steelblue, 0.5)
-}
+  .thumb-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: null;
+    right: 0;
+    background: fade-out($darkgray, 0.5);
+    height: 100%;
+    text-align: center;
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    -o-transition: top 0.5s;
 
+    h1 {
+      display: block;
+      font-size: 30px;
+      color: $white;
+      padding-top: 30px;
+      text-transform: uppercase;
+    }
+  }
+}
 
 .tittel {
   font-size: 2em;

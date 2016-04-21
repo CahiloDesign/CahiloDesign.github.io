@@ -143,28 +143,47 @@ body {
 /*---------- Portfolio Styles ----------*/
 .alt-section {
   background: #126398;
-  padding-top: 180px; }
+  padding-top: 180px;
+  overflow-x: hidden; }
 
 .thumb-container {
-  max-width: 1416px;
+  max-width: 95%;
   margin: 0 auto;
-  padding-bottom: 500px; }
+  padding-bottom: 680px; }
 
 .thumb-unit1, .thumb-unit2, .thumb-unit3, .thumb-unit4, .thumb-unit5, .thumb-unit6, .thumb-unit7, .thumb-unit8 {
   width: 25%;
-  height: 200px;
+  height: 220px;
   background: pink;
   display: block;
   float: left;
-  position: relative; }
-
-.thumb-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(70, 130, 180, 0.5); }
+  position: relative;
+  overflow: hidden;
+  padding-top: 2%; }
+  .thumb-unit1:hover .thumb-overlay, .thumb-unit2:hover .thumb-overlay, .thumb-unit3:hover .thumb-overlay, .thumb-unit4:hover .thumb-overlay, .thumb-unit5:hover .thumb-overlay, .thumb-unit6:hover .thumb-overlay, .thumb-unit7:hover .thumb-overlay, .thumb-unit8:hover .thumb-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    bottom: null;
+    right: 0; }
+  .thumb-unit1 .thumb-overlay, .thumb-unit2 .thumb-overlay, .thumb-unit3 .thumb-overlay, .thumb-unit4 .thumb-overlay, .thumb-unit5 .thumb-overlay, .thumb-unit6 .thumb-overlay, .thumb-unit7 .thumb-overlay, .thumb-unit8 .thumb-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: null;
+    right: 0;
+    background: rgba(15, 15, 15, 0.5);
+    height: 100%;
+    text-align: center;
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    -o-transition: top 0.5s; }
+    .thumb-unit1 .thumb-overlay h1, .thumb-unit2 .thumb-overlay h1, .thumb-unit3 .thumb-overlay h1, .thumb-unit4 .thumb-overlay h1, .thumb-unit5 .thumb-overlay h1, .thumb-unit6 .thumb-overlay h1, .thumb-unit7 .thumb-overlay h1, .thumb-unit8 .thumb-overlay h1 {
+      display: block;
+      font-size: 30px;
+      color: #FFFFFF;
+      padding-top: 30px;
+      text-transform: uppercase; }
 
 .tittel {
   font-size: 2em;
