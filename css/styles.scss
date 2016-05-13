@@ -36,10 +36,16 @@ body {
   margin-left: 10px;
   font-weight: 700;
   font-size: 20px;
-  color: $white;
+  color: rgba(255, 100, 255, 1);
   text-decoration: none;
   justify-content: center;
   display: flex;
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  a:active {
+    color: rgba(255, 100, 255, 1);
+  }
 }
 .button_highlight {
   background-color: $headerdarkblue;
